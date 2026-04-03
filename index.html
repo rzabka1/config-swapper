@@ -7,19 +7,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
+    <link id="style" rel="stylesheet" type="text/css" href="kosmobotanika.css" />
 </head>
 <body>
     <h1 style="text-align: center">Themes :&gt;</h1>
-    
-    <h1>theme1</h1>
+	<div class="vbox">
+		<button class="theme" id="th1" autofocus onmouseover="focus()" onfocus="changeCSS('kosmobotanika.css')">kosmobotanika</button> <br>
 
-    <h1>theme2</h1>
+		<button class="theme" id="th2" onmouseover="focus()" onfocus="changeCSS('bubblegum.css')">bubblegum</button> <br>
 
-    <h1>theme3</h1>
+		<button class="theme" id="th3" onmouseover=focus()>theme3</button> <br>
 
-    <h1>theme4</h1>
+		<button class="theme" id="th4" onmouseover=focus()>theme4</button> <br>
 
+		<button class="theme" id="th5" onmouseover=focus()>theme5</button> <br>
+
+		<button class="theme" id="th6" onmouseover=focus()>theme6</button> <br>
+
+		<button class="theme" id="th7" onmouseover=focus()>theme7</button> <br>
+
+		<button class="theme" id="th8" onmouseover=focus()>theme8</button> <br>
+	</div>
+	<script src="renderer.js"></script>
 </body>
 </html>

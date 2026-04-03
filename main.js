@@ -1,5 +1,6 @@
 //main.js
 const { app, BrowserWindow } = require('electron');
+const path = require('path');
 
 let mainWindow;
 
@@ -11,7 +12,10 @@ function createWindow() {
 	frame: false,
 	alwaysOnTop: true,
         webPreferences: {
-            nodeIntegration: true,
+            preload: path.join(__dirname, 'preload.js'),
+            nodeIntegration: false,
+            contextIsolation: true,
+            sandbox: false,
         },
     });
 
@@ -21,6 +25,7 @@ function createWindow() {
     mainWindow.on('closed', function () {
         mainWindow = null;
     });
+
 }
 
 app.whenReady().then(createWindow);

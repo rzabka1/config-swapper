@@ -1,0 +1,51 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+  background-color: #ffc0c0;
+  padding: 10px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+h1 {
+  color: #ff77a8;
+  font-family: "JetBrains Mono", monospace;
+}
+
+button {
+  background-color: #ff77a8;
+  color: #ffc9d3;
+  font-size: 24px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 3%;
+  padding: 10px;
+  width: 100%;
+  font-family: "JetBrains Mono", monospace;
+}
+
+button:focus {
+  background-color: #fffea1;
+  color: #008751;
+  font-size: 24px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 3%;
+  padding: 10px;
+  width: 100%;
+  font-family: "JetBrains Mono", monospace;
+}
+
+/*button:hover {*/
+/*  background-color: #fffea1;*/
+/*  color: #008751;*/
+/*  font-size: 24px;*/
+/*  border: none;*/
+/*  border-radius: 10px;*/
+/*  margin-bottom: 3%;*/
+/*  padding: 10px;*/
+/*  width: 100%;*/
+/*}*/
