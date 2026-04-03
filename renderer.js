@@ -34,7 +34,7 @@ document.getElementById("th2").addEventListener("click", () => {
 })
 
 document.getElementById("th3").addEventListener("click", () => {
-    console.log("clicked");
+    window.api.runCommand('/home/rzaba/Desktop/Programowansko/my-CLIs/Configs/config-yellow');
 })
 
 document.getElementById("th4").addEventListener("click", () => {
