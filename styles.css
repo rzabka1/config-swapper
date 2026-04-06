@@ -1,0 +1,80 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --body-bg-color: #11112d;
+    --h1-color: #a9aefe;
+    --button-bg-color: #0e0e43;
+    --button-color: #a9aefe;
+    --button-focus-bg-color: #9ef280;
+    --button-focus-color: #0e0e43;
+    --tr-time: 0.4s;
+    --tr-type: ease;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.kosmobotanika {
+    --body-bg-color: #11112d;
+    --h1-color: #a9aefe;
+    --button-bg-color: #0e0e43;
+    --button-color: #a9aefe;
+    --button-focus-bg-color: #9ef280;
+    --button-focus-color: #0e0e43;
+}
+
+.bubblegum {
+    --body-bg-color: #ffc0c0;
+    --h1-color: #ff77a8;
+    --button-bg-color: #ff77a8;
+    --button-color: #ffc9d3;
+    --button-focus-bg-color: #fffea1;
+    --button-focus-color: #008751;
+}
+
+.sunflowers {
+    --body-bg-color: #ffe799;
+    --h1-color: #824c2c;
+    --button-bg-color: #ffc71c;
+    --button-color: #824c2c;
+    --button-focus-bg-color: #c64a07;
+    --button-focus-color: #ffe799;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    padding: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: -20px;
+    transition: background-color var(--tr-time) var(--tr-type);
+}
+
+h1 {
+    color: var(--h1-color);
+    transition: color var(--tr-time) var(--tr-type);
+}
+
+button {
+    background-color: var(--button-bg-color);
+    color: var(--button-color);
+    font-size: 24px;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 3%;
+    padding: 10px;
+    width: 100%;
+    transition: background-color var(--tr-time), color var(--tr-time) var(--tr-type);
+}
+
+button:focus {
+    background-color: var(--button-focus-bg-color);
+    color: var(--button-focus-color);
+    font-size: 24px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 3%;
+    padding: 10px;
+    width: 100%;
+}

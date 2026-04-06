@@ -37,35 +37,8 @@ document.getElementById("th3").addEventListener("click", () => {
     window.api.runCommand('/home/rzaba/Desktop/Programowansko/my-CLIs/Configs/config-yellow');
 })
 
-document.getElementById("th4").addEventListener("click", () => {
-    console.log("clicked");
-})
 
-document.getElementById("th5").addEventListener("click", () => {
-    console.log("clicked");
-})
-
-document.getElementById("th6").addEventListener("click", () => {
-    console.log("clicked");
-})
-
-document.getElementById("th7").addEventListener("click", () => {
-    console.log("clicked");
-})
-
-document.getElementById("th8").addEventListener("click", () => {
-    console.log("clicked");
-})
-
-// Source - https://stackoverflow.com/a/19844696
-// Posted by Matthew Johnson, modified by community. See post 'Timeline' for change history
-// Retrieved 2026-04-03, License - CC BY-SA 4.0
-
-function changeCSS(cssFile) {
-
-    let link = document.getElementById("style")
-    let oldLink = link.getAttribute("href");
-    console.log("old link: ", oldLink);
-
-    link.setAttribute("href", cssFile);
+function changeCSS(styleClass) {
+    document.body.className = styleClass
+    console.log(document.body.className)
 }
